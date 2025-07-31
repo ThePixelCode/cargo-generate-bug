@@ -1,0 +1,12 @@
+[placeholders]
+array_test = { prompt = "Array", choices = ["aaa", "bbb", "ccc", "ddd"], type = "array" }
+
+[template]
+cargo_generate_version = ">=0.23.4"
+ignore = [
+  "target",
+  "Cargo.lock"
+]
+
+[hooks]
+post = ["post-script.rhai"]
